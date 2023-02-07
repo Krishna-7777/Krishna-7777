@@ -1,0 +1,11 @@
+/* colors
+ #49c5b6
+#2779a7
+black
+*/
+#nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-left: 60%;
+}
