@@ -3,9 +3,65 @@
 #2779a7
 black
 */
+*{
+    margin: 0px;
+}
 #nav-menu{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
     margin-left: 60%;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+.box-container img{
+    height: 80px;
+}
+.react-activity-calendar img{
+    width: 90%;
+}
+#github-stuff{
+    display: flex;
+    justify-content: space-evenly;
+}
+#github-stuff img{
+    height:200px;
+}
+#background{
+   width: 100%; 
+    background-color: #49c5b6;
+    padding: 1%;
+    position: fixed;
+}
+
+#home{
+    padding: 1%;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 0;
+}
+#user-detail-intro{
+    font-size: larger;
+}
+.heading{
+    margin-left: 1%;
+}
+.skills-card{
+    margin: 2%;
+}
+#projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#projects div{
+    margin: 2%;
+    padding: 1%;
+}
+.project-card img{
+    width: 100%;
 }
