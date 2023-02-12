@@ -3,65 +3,176 @@
 #2779a7
 black
 */
-*{
+* {
+    text-align: center;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#nav-menu{
+
+#nav-menu {
     display: flex;
     justify-content: space-evenly;
     width: 40%;
     margin-left: 60%;
 }
-.box-container{
+
+.box-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     text-align: center;
 }
-.box-container img{
+
+.box-container img {
     height: 80px;
 }
-.react-activity-calendar img{
+
+.react-activity-calendar img {
     width: 90%;
 }
-#github-stuff{
+
+#github-stuff {
     display: flex;
     justify-content: space-evenly;
-}
-#github-stuff img{
-    height:200px;
-}
-#background{
-   width: 100%; 
-    background-color: #49c5b6;
-    padding: 1%;
-    position: fixed;
 }
 
-#home{
+#github-stuff img {
+    height: 200px;
+}
+
+#background {
+    background-color: #1b1bd4;
+    background-image: linear-gradient(109deg, #007bff8a 0%, rgb(55, 182, 255) 100%);
+    width: 100%;
     padding: 1%;
-    padding-top: 50px;
+    position: fixed;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+#home {
+    padding-top: 0px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    height: 100vh;
     justify-content: space-evenly;
     z-index: 0;
+    background-color: #1b1bd4;
+    background-image: linear-gradient(109deg, #007bff8a 0%, #4fbeff 100%);
 }
-#user-detail-intro{
+
+#home h1 {
+    font-size: 20vh;
+    color: white;
+}
+
+#home h2 {
+    font-size: 10vh;
+    color: white;
+}
+
+#home button {
+    padding: 10% 20%;
+    font-size: 3vh;
+    border-radius: 1vh;
+    font-weight: 530;
+    background-color: #4fbeff;
+    display: flex;
+    gap: 10px;
+}
+
+#user-detail-intro {
     font-size: larger;
 }
-.heading{
-    margin-left: 1%;
+
+.heading {
+    padding: 2%;
 }
-.skills-card{
-    margin: 2%;
+
+.skills-card {
+    margin: 5%;
 }
-#projects{
+
+#projects {
+
+    scroll-behavior: smooth;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-#projects div{
+
+#projects div {
     margin: 2%;
     padding: 1%;
 }
-.project-card img{
+
+.project-card img {
     width: 100%;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: none;
+    color: white;
+    font-weight: 400;
+}
+
+#nav-menu>a:hover,
+button:hover {
+    font-weight: 600;
+    transition: 100ms ease-in-out;
+}
+
+#about {
+    margin-top: 2%;
+    width: 80%;
+    padding-left: 10%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
+#about img {
+    border-radius: 50%;
+    padding: 1%;
+}
+
+#contact {
+    margin-top: 2%;
+    padding-bottom: 4%;
+    background-color: #1b1bd4;
+    background-image: linear-gradient(109deg, #007bff8a 0%, #4fbeff 100%);
+    color: white;
+    font-size: 2.5vh;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact button {
+    padding: 0.5%;
+    margin: 1%;
+    font-size: 3vh;
+    border-radius: 1vh;
+    font-weight: 530;
+    background-color: #4fbeff;
+    gap: 10px;
+}
+
+.box-container {
+    margin-bottom: 1%;
+}
+
+#nav-menu button {
+    background-color: #4fbeff;
+    display: flex;
+    font-size: 2vh;
+    padding: 3% 8%;
+    margin: 0px;
+    color: white;
+    border-radius: 1vh;
+    gap: 4px;
+    font-weight: 400;
 }
