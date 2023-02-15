@@ -3,6 +3,11 @@
 #2779a7
 black
 */
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 7rem;
+}
 * {
     text-align: center;
     margin: 0px;
@@ -12,8 +17,7 @@ black
 #nav-menu {
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
-    margin-left: 60%;
+    align-items: center;
 }
 
 .box-container {
@@ -23,7 +27,7 @@ black
 }
 
 .box-container img {
-    height: 80px;
+    max-height: 80px;
 }
 
 .react-activity-calendar img {
@@ -37,7 +41,7 @@ black
 }
 
 #github-stuff img {
-    height: 200px;
+    max-height: 200px;
 }
 
 #background {
@@ -62,17 +66,18 @@ black
 }
 
 #home h1 {
-    font-size: 20vh;
+    font-size: 8vw;
     color: white;
 }
 
 #home h2 {
-    font-size: 10vh;
+    font-size: 5vw;
     color: white;
 }
 
 #home button {
     padding: 10% 20%;
+    margin-left: -20%;
     font-size: 3vh;
     border-radius: 1vh;
     font-weight: 530;
@@ -93,20 +98,22 @@ black
     margin: 5%;
 }
 
-#projects {
-
-    scroll-behavior: smooth;
+#projects>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+#projects h2{
+    padding: 0%;
 }
 
 #projects div {
     margin: 2%;
     padding: 1%;
+    max-width: 100%;
 }
 
 .project-card img {
-    width: 100%;
+    max-width: 100%;
 }
 
 #nav-menu a {
@@ -117,11 +124,7 @@ black
     font-weight: 400;
 }
 
-#nav-menu>a:hover,
-button:hover {
-    font-weight: 600;
-    transition: 100ms ease-in-out;
-}
+
 
 #about {
     margin-top: 2%;
@@ -135,6 +138,7 @@ h2 {
 }
 
 #about img {
+    max-width: 100%;
     border-radius: 50%;
     padding: 1%;
 }
@@ -176,4 +180,72 @@ h2 {
     border-radius: 1vh;
     gap: 4px;
     font-weight: 400;
+}
+#ham{
+    display: none;
+}
+@media (max-width:1560px) {
+    #github-stuff {
+        flex-direction: column;
+    }
+    #github-stuff img{
+        width: 90%;
+        margin: 1.5% 5%;
+    }
+}
+@media (max-width:800px) {
+    #projects>div {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-menu a {
+        font-size: 16px;
+    }
+}
+@media (max-width:850px) and (min-width:371px) {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .box-container div:nth-last-child(1){
+        display: none;
+    }
+}
+@media (max-width:370px) {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}
+@media (max-width:600px){
+    #ham{
+        display: unset;
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 25px;
+    }
+    #nav-menu{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #nav-menu a{
+        display: none; 
+        font-size: larger;
+        padding: 1%;
+    }
+    #nav-menu a.active{
+        display: flex;
+        
+    }
+    #nav-menu{
+        padding-top: 35px;
+    }
+    #home h1{
+        padding-top: 10%;
+    }
 }
