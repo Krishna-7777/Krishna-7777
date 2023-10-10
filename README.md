@@ -1,6 +1,6 @@
-<h1 align="center">Hi 👋, I'm Krishna</h1>
-<h3 align="center">A self-motivated, hard-working Web Developer with proficiency in JavaScript, Node.js, Express.js, MongoDB, Mongoose, HTML and CSS. Problem-solving mindset and the ability to perform well in collaboration.</h3>
-<h3 align="center">Take a look at my <a href="https://krishna-7777.github.io" target="_blank">Portfolio</a></h3>
+<p align="center" style="font-size: 30px; font-weight: bold;">Hi 👋, I'm Krishna</p>
+<p align="center">A self-motivated, hard-working Web Developer with proficiency in JavaScript, Node.js, Express.js, MongoDB, Mongoose, HTML and CSS. Problem-solving mindset and the ability to perform well in collaboration.</p>
+<p align="center">Take a look at my <a href="https://krishna-7777.github.io" target="_blank">Portfolio</a></p>
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=krishna-7777&label=Profile%20views&color=0e75b6&style=flat" alt="krishna-7777" /> </p>
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=krishna-7777&row=1" alt="krishna-7777" /></a> </p>
